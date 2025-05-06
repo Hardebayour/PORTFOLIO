@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <title>Bayo | Portfolio</title>
+  </head>
+
+  <body class="bg-gray-100 text-gray-800 relative">
+    <header
+      id="header"
+      class="bg-white shadow-md left-0 top-0 fixed w-full z-40 transition-all duration-300"
+      data-aos="fade-down"
+      data-aos-duration="1000"
+      data-aos-delay="200"
+      data-aos-easing="ease-in-out"
+    >
+      <div
+        class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <h1 class="text-2xl font-bold text-black">Bayo. M</h1>
+
+        <!-- Hamburger Icon -->
+        <button id="menu-toggle" class="md:hidden text-2xl focus:outline-none">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <nav
+          id="nav-menu"
+          class="hidden md:flex flex-col md:flex-row md:space-x-6 font-semibold text-black absolute md:static top-full left-0 w-full md:w-auto bg-white md:bg-transparent px-6 md:px-0 py-4 md:py-0 shadow-md md:shadow-none transition-all duration-300 z-30"
+        >
+          <a
+            href="#home"
+            class="px-4 py-2 rounded-md hover:bg-gray-200 hover:text-blue-600 transition duration-300 ease-in-out"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="px-4 py-2 rounded-md hover:bg-gray-200 hover:text-blue-600 transition duration-300 ease-in-out"
+            >About</a
+          >
+          <a
+            href="#projects"
+            class="px-4 py-2 rounded-md hover:bg-gray-200 hover:text-blue-600 transition duration-300 ease-in-out"
+            >Projects</a
+          >
+          <a
+            href="#skills"
+            class="px-4 py-2 rounded-md hover:bg-gray-200 hover:text-blue-600 transition duration-300 ease-in-out"
+            >Skills</a
+          >
+          <a
+            href="#contact"
+            class="px-4 py-2 rounded-md hover:bg-gray-200 hover:text-blue-600 transition duration-300 ease-in-out"
+            >Contact</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <section
+      id="home"
+      class="min-h-screen flex flex-col justify-center items-center text-center px-4 pt-20"
+    >
+      <h1
+        class="text-3xl md:text-4xl font-montserrat font-bold"
+        data-aos="fade-down"
+        data-aos-duration="1000"
+      >
+        Nice to meet you!<br />
+        I'm Bayo Madiu.
+      </h1>
+      <p
+        class="mt-4 text-xl md:text-xl text-gray-600"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="300"
+      >
+        A passionate Front-End Developer crafting clean, responsive websites.
+      </p>
+
+      <div
+        class="flex gap-4 justify-center mt-6"
+        data-aos="zoom-in"
+        data-aos-delay="600"
+      >
+        <a
+          href="#contact"
+          class="flex items-center gap-2 bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 hover:scale-105 hover:shadow-lg transform transition duration-300"
+          >Contact me here <i class="fas fa-message"></i>
+        </a>
+        <a
+          href="#"
+          class="flex items-center gap-2 bg-gray-800 text-white py-2 px-4 rounded-lg hover:bg-gray-900 hover:scale-105 hover:shadow-lg transform transition duration-300"
+          download
+          >Resume <i class="fas fa-circle-down"></i>
+        </a>
+      </div>
+    </section>
+
+    <section id="about" class="py-16 px-6 bg-gray-50">
+      <div
+        class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8"
+      >
+        <!-- Profile Picture -->
+        <img
+          src="/img/Bayo.jpg"
+          class="w-40 h-40 md:w-56 md:h-56 rounded-full shadow-md object-cover"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        />
+
+        <!-- About Me Text -->
+        <div data-aos="fade-left" data-aos-duration="1000">
+          <h2 class="text-3xl font-bold mb-4">About Me</h2>
+          <p class="text-gray-700 leading-relaxed">
+            Hi, I'm Tajudeen Madiu, a passionate Front-End Developer with a
+            growing love for clean UI, responsive design, and JavaScript magic.
+            I enjoy learning, building projects, and growing my skills every
+            day.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="bg-gray-100 py-16 px-5">
+      <div class="max-w-6xl mx-auto">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-center mb-10"
+          data-aos="fade-up"
+        >
+          Projects
+        </h2>
+
+        <div class="flex flex-wrap justify-center gap-8">
+          <!-- project 1 -->
+          <div
+            class="bg-white shadow-lg rounded-xl p-6 w-full md:w-5/12 lg:w-1/3 transform transition hover:-translate-y-2 hover:shadow-2xl"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <div class="overflow-hidden rounded-lg">
+              <img
+                src="/img/shopping webstite.png"
+                alt="Fashion Website"
+                class="hover:scale-105 transition transform duration-500 w-full h-auto"
+              />
+            </div>
+            <h3 class="text-xl text-center font-semibold mt-4 mb-4">
+              Fashion Site
+            </h3>
+            <div class="flex justify-center">
+              <a
+                href="https://shopping-site-bayo.netlify.app/"
+                target="_blank"
+                class="group inline-flex items-center gap-2 px-6 py-2 bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold rounded-full shadow-md hover:shadow-indigo-400/70 hover:scale-105 transition-all transform duration-300"
+              >
+                View Live
+                <svg
+                  class="w-4 h-4 transform transition-transform duration-300 group-hover:translate-x-1"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 5l7 7-7 7"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- project 2 -->
+          <div
+            class="bg-white shadow-lg rounded-xl p-6 w-full md:w-5/12 lg:w-1/3 transform transition hover:-translate-y-2 hover:shadow-2xl"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <div class="overflow-hidden rounded-lg">
+              <img
+                src="/img/url website.png"
+                alt="URL Shortener Website"
+                class="hover:scale-105 transition transform duration-500 w-full h-auto"
+              />
+            </div>
+            <h3 class="text-xl text-center font-semibold mt-4 mb-4">
+              URL Shortener Site
+            </h3>
+            <div class="flex justify-center">
+              <a
+                href="https://your-url-shortener-site.netlify.app/"
+                target="_blank"
+                class="group inline-flex items-center gap-2 px-6 py-2 bg-gradient-to-r from-green-400 to-blue-500 text-white font-semibold rounded-full shadow-md hover:shadow-green-400/70 hover:scale-105 transition-all transform duration-300"
+              >
+                View Live
+                <svg
+                  class="w-4 h-4 transform transition-transform duration-300 group-hover:translate-x-1"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 5l7 7-7 7"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- project 3 -->
+          <div
+            class="bg-white shadow-lg rounded-xl p-6 w-full md:w-5/12 lg:w-1/3 transform transition hover:translate-y-2 hover:shadow-2xl"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
+            <div class="overflow-hidden rounded-lg">
+              <img
+                src="/img/sunny.png"
+                class="hover:scale-105 transition transform duration-500 w-full h-auto"
+              />
+            </div>
+            <h3 class="text-xl text-center font-semibold mt-4 mb-4">
+              sunnyside website
+            </h3>
+            <div class="flex justify-center">
+              <a
+                href="https://sunnyside-bayo-website.netlify.app/"
+                target="_blank"
+                class="group inline-flex items-center gap-2 px-6 py-2 bg-gradient-to-r from-pink-500 to-red-500 text-white font-semibold rounded-full shadow-md hover:shadow-pink-400/70 hover:scale-105 transform transition-all duration-300"
+              >
+                View Live
+                <svg
+                  class="w-4 h-4 transform transition-transform duration-300 group-hover:translate-x-1"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 5l7 7-7 7"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="bg-gray-50 dark:bg-gray-900 font-lato py-16 px-4"
+      id="skills"
+    >
+      <div class="max-w-5xl mx-auto text-center">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-10"
+          data-aos="fade-up"
+        >
+          My Skills
+        </h2>
+
+        <div class="flex flex-wrap justify-center gap-6">
+          <div
+            class="bg-white dark:bg-gray-800 shadow-md rounded-xl p-6 w-40 flex flex-col items-center transform transition-transform hover:scale-105 hover:shadow-xl duration-300"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              class="w-12 mb-4"
+              alt="JavaScript"
+            />
+            <p class="text-lg font-semibold text-gray-800 dark:text-white">
+              JavaScript
+            </p>
+          </div>
+
+          <div
+            class="bg-white dark:bg-gray-800 shadow-md rounded-xl p-6 w-40 flex flex-col items-center transform transition-transform hover:scale-105 hover:shadow-xl duration-300"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+              class="w-12 mb-4"
+              alt="HTML"
+            />
+            <p class="text-lg font-semibold text-gray-800 dark:text-white">
+              HTML
+            </p>
+          </div>
+
+          <div
+            class="bg-white dark:bg-gray-800 shadow-md rounded-xl p-6 w-40 flex flex-col items-center transform transition-transform hover:scale-105 hover:shadow-xl duration-300"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+              class="w-12 mb-4"
+              alt="CSS"
+            />
+            <p class="text-lg font-semibold text-gray-800 dark:text-white">
+              CSS
+            </p>
+          </div>
+
+          <div
+            class="bg-white dark:bg-gray-800 shadow-md rounded-xl p-6 w-40 flex flex-col items-center transform transition-transform hover:scale-105 hover:shadow-xl duration-300"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg"
+              class="w-12 mb-4"
+              alt="Bootstrap"
+            />
+            <p class="text-lg font-semibold text-gray-800 dark:text-white">
+              Bootstrap
+            </p>
+          </div>
+
+          <div
+            class="bg-white dark:bg-gray-800 shadow-md rounded-xl p-6 w-40 flex flex-col items-center transform transition-transform hover:scale-105 hover:shadow-xl duration-300"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <img src="/img/download.png" class="w-12 mb-4" alt="Tailwind CSS" />
+            <p class="text-lg font-semibold text-gray-800 dark:text-white">
+              Tailwind CSS
+            </p>
+          </div>
+
+          <div
+            class="bg-white dark:bg-gray-800 shadow-md rounded-xl p-6 w-40 flex flex-col items-center transform transition-transform hover:scale-105 hover:shadow-xl duration-300"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <img src="/img/gitup.png" class="w-12 mb-4" alt="Tailwind CSS" />
+            <p class="text-lg font-semibold text-gray-800 dark:text-white">
+              Git & GitHub
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-16 bg-gray-100">
+      <div class="max-w-xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">Contact Me</h2>
+
+        <form
+          id="contact-form"
+          class="space-y-6 bg-white p-6 shadow-md rounded-md"
+        >
+          <div class="block text-sm font-semibold mb-1">
+            <input
+              type="email"
+              name="email"
+              placeholder="Email address"
+              required
+              class="w-full border border-gray-300 p-2 rounded focus:ring-2 focus:ring-blue-500 outline-none"
+            />
+          </div>
+
+          <div class="block text-sm font-semibold mb-1">
+            <textarea
+              rows="4"
+              placeholder="Your message..."
+              required
+              class="w-full border border-gray-300 p-2 rounded focus:ring-2 focus:ring-blue-500 outline-none"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="flex items-center gap-2 bg-gray-800 text-white px-4 py-2 text-sm rounded hover:bg-gray-700 transition"
+          >
+            <i class="fas fa-paper-plane"></i> Submit
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-8">
+      <div
+        class="max-w-5xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4"
+      >
+        <p class="text-sm">&copy; 2025 Tajudeen Madiu. All rights reserved.</p>
+        <div class="flex gap-5">
+          <!-- GitHub -->
+          <a
+            href="https://github.com/Hardebayour"
+            target="_blank"
+            class="hover:text-gray-400 transition transform hover:scale-110"
+          >
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 .5C5.73.5.5 5.73.5 12a11.5 11.5 0 0 0 7.84 10.93c.57.1.78-.25.78-.55v-2.16c-3.19.69-3.86-1.38-3.86-1.38-.52-1.32-1.26-1.67-1.26-1.67-1.03-.7.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.73 2.65 1.23 3.3.94.1-.73.4-1.23.73-1.51-2.55-.29-5.23-1.28-5.23-5.72 0-1.26.45-2.29 1.17-3.1-.12-.28-.51-1.41.11-2.94 0 0 .96-.31 3.14 1.18a10.93 10.93 0 0 1 5.72 0c2.18-1.49 3.14-1.18 3.14-1.18.62 1.53.23 2.66.11 2.94.73.81 1.17 1.84 1.17 3.1 0 4.45-2.69 5.43-5.25 5.71.41.36.78 1.07.78 2.16v3.2c0 .3.21.66.79.55A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"
+              />
+            </svg>
+          </a>
+
+          <!-- LinkedIn -->
+          <a
+            href="https://www.linkedin.com/in/bayo-madiu-167331334/"
+            target="_blank"
+            class="hover:text-gray-400 transition transform hover:scale-110"
+          >
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M4.98 3.5a2.5 2.5 0 1 1 0 5.001 2.5 2.5 0 0 1 0-5zM3 9h4v12H3V9zm7 0h3.6v1.71h.05a3.95 3.95 0 0 1 3.55-1.96c3.8 0 4.5 2.5 4.5 5.74V21h-4v-5.72c0-1.37-.03-3.13-1.91-3.13-1.91 0-2.2 1.49-2.2 3.03V21h-4V9z"
+              />
+            </svg>
+          </a>
+
+          <!-- Instagram -->
+          <a
+            href="https://www.instagram.com/its_bayo0/"
+            target="_blank"
+            class="hover:text-gray-400 transition transform hover:scale-110"
+          >
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm4.25 3.25a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11zm0 1.5a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm5.25-.75a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5z"
+              />
+            </svg>
+          </a>
+
+          <!-- Email -->
+          <a
+            href="mailto:bayomadiu04@gmail.com"
+            class="hover:text-gray-400 transition transform hover:scale-110"
+          >
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M2 4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v1.2l-10 6.3L2 5.2V4Zm0 3.47v12.53a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7.47l-10 6.3-10-6.3Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button
+      id="backToTopBtn"
+      onclick="scrollToTop()"
+      class="hidden fixed bottom-5 right-5 bg-teal-600 text-white p-3 rounded-full shadow-md hover:bg-teal-700 transition duration-300"
+      title="Back to top"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="/script/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="/script/email.js"></script>
+  </body>
+</html>
